@@ -3,9 +3,9 @@
 spring:
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: jdbc:oracle:thin:@172.24.116.232:1521:helowin
+    url: jdbc:oracle:thin:@172.14.106.232:1521:helowin
     username: cyz
-    password: caoyizhuo
+    password: caoyhuo
     mvc:
       pathmatch:
         matching-strategy: ant_path_matcher
