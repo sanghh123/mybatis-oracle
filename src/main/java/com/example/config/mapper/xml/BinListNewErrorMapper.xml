@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.config.mapper.BinListNewErrorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.config.entity.BinListNewError">
+        <id column="ID" property="id" />
+        <result column="MSGID" property="msgid" />
+        <result column="ENNETROADID" property="ennetroadid" />
+        <result column="ENSECTIONID" property="ensectionid" />
+        <result column="ENROADNO" property="enroadno" />
+        <result column="ENSTATIONID" property="enstationid" />
+        <result column="ENSTATIONNO" property="enstationno" />
+        <result column="ENTOLLLANEID" property="entolllaneid" />
+        <result column="ENTOLLLANENO" property="entolllaneno" />
+        <result column="ENTOLLLANEHEX" property="entolllanehex" />
+        <result column="ENTOLLLANETYPE" property="entolllanetype" />
+        <result column="LOADGANTRYID" property="loadgantryid" />
+        <result column="ENOPERATORID" property="enoperatorid" />
+        <result column="ENOPERATORNAME" property="enoperatorname" />
+        <result column="SQUADDATE" property="squaddate" />
+        <result column="NATURALDATE" property="naturaldate" />
+        <result column="SQUADNO" property="squadno" />
+        <result column="SQUADON" property="squadon" />
+        <result column="ENTIME" property="entime" />
+        <result column="ENVEHICLEPLATE" property="envehicleplate" />
+        <result column="ENVEHICLEPLATECOLOR" property="envehicleplatecolor" />
+        <result column="ENIDENTIFYVEHICLEPLATE" property="enidentifyvehicleplate" />
+        <result column="ENIDENTIFYVEHICLEPLATECOLOR" property="enidentifyvehicleplatecolor" />
+        <result column="ENCARDVEHPLATE" property="encardvehplate" />
+        <result column="ENVEHICLETYPE" property="envehicletype" />
+        <result column="ENVEHICLECLASS" property="envehicleclass" />
+        <result column="MEDIATYPE" property="mediatype" />
+        <result column="OBUSIGN" property="obusign" />
+        <result column="TERMINALTRANSNO" property="terminaltransno" />
+        <result column="OBUID" property="obuid" />
+        <result column="CARDID" property="cardid" />
+        <result column="TRANSFEE" property="transfee" />
+        <result column="TRANSTYPE" property="transtype" />
+        <result column="TERMINALNO" property="terminalno" />
+        <result column="ENWEIGHT" property="enweight" />
+        <result column="ENAXLECOUNT" property="enaxlecount" />
+        <result column="ELECTRICALPERCENTAGE" property="electricalpercentage" />
+        <result column="SIGNSTATUS" property="signstatus" />
+        <result column="SPECIALTYPE" property="specialtype" />
+        <result column="SPECIALSTATUS" property="specialstatus" />
+        <result column="PROSPECIALSTATUS" property="prospecialstatus" />
+        <result column="VEHICLESIGNID" property="vehiclesignid" />
+        <result column="PASSID" property="passid" />
+        <result column="ENOPCARDID" property="enopcardid" />
+        <result column="ENSHIFTID" property="enshiftid" />
+        <result column="CARDBOXNO" property="cardboxno" />
+        <result column="CARDTRUNKNO" property="cardtrunkno" />
+        <result column="APPVER" property="appver" />
+        <result column="VEHCOUNT" property="vehcount" />
+        <result column="ISTEST" property="istest" />
+        <result column="VEHICLESIGN" property="vehiclesign" />
+        <result column="SPARE1" property="spare1" />
+        <result column="SPARE2" property="spare2" />
+        <result column="SPARE3" property="spare3" />
+        <result column="SPARE4" property="spare4" />
+        <result column="SPARE5" property="spare5" />
+        <result column="SPARE6" property="spare6" />
+        <result column="OPERATIONMEDIA" property="operationmedia" />
+        <result column="ETCCARDTYPE" property="etccardtype" />
+        <result column="HGSEQ" property="hgseq" />
+        <result column="HGINSERTTABLETIME" property="hginserttabletime" />
+        <result column="PVEHTYPE" property="pvehtype" />
+        <result column="PVEHCLASS" property="pvehclass" />
+        <result column="SEQ" property="seq" />
+        <result column="ERRORTYPE" property="errortype" />
+        <result column="ERRORDETAIL" property="errordetail" />
+        <result column="HADDEAL" property="haddeal" />
+        <result column="DEALTIME" property="dealtime" />
+        <result column="ERRORTOTAL" property="errortotal" />
+        <result column="JSONNAME" property="jsonname" />
+        <result column="DEALDESC" property="dealdesc" />
+        <result column="UPDATEUSER" property="updateuser" />
+        <result column="QRECEIVETIME" property="qreceivetime" />
+        <result column="TAC" property="tac" />
+        <result column="ENOPCARDNO" property="enopcardno" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MSGID, ID, ENNETROADID, ENSECTIONID, ENROADNO, ENSTATIONID, ENSTATIONNO, ENTOLLLANEID, ENTOLLLANENO, ENTOLLLANEHEX, ENTOLLLANETYPE, LOADGANTRYID, ENOPERATORID, ENOPERATORNAME, SQUADDATE, NATURALDATE, SQUADNO, SQUADON, ENTIME, ENVEHICLEPLATE, ENVEHICLEPLATECOLOR, ENIDENTIFYVEHICLEPLATE, ENIDENTIFYVEHICLEPLATECOLOR, ENCARDVEHPLATE, ENVEHICLETYPE, ENVEHICLECLASS, MEDIATYPE, OBUSIGN, TERMINALTRANSNO, OBUID, CARDID, TRANSFEE, TRANSTYPE, TERMINALNO, ENWEIGHT, ENAXLECOUNT, ELECTRICALPERCENTAGE, SIGNSTATUS, SPECIALTYPE, SPECIALSTATUS, PROSPECIALSTATUS, VEHICLESIGNID, PASSID, ENOPCARDID, ENSHIFTID, CARDBOXNO, CARDTRUNKNO, APPVER, VEHCOUNT, ISTEST, VEHICLESIGN, SPARE1, SPARE2, SPARE3, SPARE4, SPARE5, SPARE6, OPERATIONMEDIA, ETCCARDTYPE, HGSEQ, HGINSERTTABLETIME, PVEHTYPE, PVEHCLASS, SEQ, ERRORTYPE, ERRORDETAIL, HADDEAL, DEALTIME, ERRORTOTAL, JSONNAME, DEALDESC, UPDATEUSER, QRECEIVETIME, TAC, ENOPCARDNO
+    </sql>
+
+</mapper>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.config.mapper.BinListOutNewErrorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.config.entity.BinListOutNewError">
+        <result column="MSGID" property="msgid" />
+        <result column="ID" property="id" />
+        <result column="ENNETROADID" property="ennetroadid" />
+        <result column="ENSECTIONID" property="ensectionid" />
+        <result column="ENROADNO" property="enroadno" />
+        <result column="ENSTATIONID" property="enstationid" />
+        <result column="ENSTATIONNO" property="enstationno" />
+        <result column="ENTOLLSTATIONNAME" property="entollstationname" />
+        <result column="ENTOLLLANEID" property="entolllaneid" />
+        <result column="ENTOLLLANENO" property="entolllaneno" />
+        <result column="ENTOLLLANEHEX" property="entolllanehex" />
+        <result column="ENTOLLLANETYPE" property="entolllanetype" />
+        <result column="ENOPERATORID" property="enoperatorid" />
+        <result column="ENOPERATORNAME" property="enoperatorname" />
+        <result column="ENTIME" property="entime" />
+        <result column="ENSHIFTID" property="enshiftid" />
+        <result column="ENVEHICLEID" property="envehicleid" />
+        <result column="ENVEHICLECLASS" property="envehicleclass" />
+        <result column="ENVEHICLETYPE" property="envehicletype" />
+        <result column="ENWEIGHT" property="enweight" />
+        <result column="ENAXLECOUNT" property="enaxlecount" />
+        <result column="EXNETROADID" property="exnetroadid" />
+        <result column="EXSECTIONID" property="exsectionid" />
+        <result column="EXROADNO" property="exroadno" />
+        <result column="EXSTATIONID" property="exstationid" />
+        <result column="EXSTATIONNO" property="exstationno" />
+        <result column="EXTOLLSTATIONNAME" property="extollstationname" />
+        <result column="EXTOLLLANEID" property="extolllaneid" />
+        <result column="EXTOLLLANENO" property="extolllaneno" />
+        <result column="EXTOLLLANEHEX" property="extolllanehex" />
+        <result column="EXTOLLLANETYPE" property="extolllanetype" />
+        <result column="LOADGANTRYID" property="loadgantryid" />
+        <result column="EXTIME" property="extime" />
+        <result column="EXOPERATORID" property="exoperatorid" />
+        <result column="EXOPERATORNAME" property="exoperatorname" />
+        <result column="EXOPCARDNO" property="exopcardno" />
+        <result column="EXOPCARDID" property="exopcardid" />
+        <result column="SQUADDATE" property="squaddate" />
+        <result column="EXSHIFTID" property="exshiftid" />
+        <result column="NATURALDATE" property="naturaldate" />
+        <result column="SQUADNO" property="squadno" />
+        <result column="SQUADON" property="squadon" />
+        <result column="EXVEHICLEID" property="exvehicleid" />
+        <result column="EXIDENTIFYVEHICLEID" property="exidentifyvehicleid" />
+        <result column="EXVEHICLECLASS" property="exvehicleclass" />
+        <result column="EXVEHICLETYPE" property="exvehicletype" />
+        <result column="OBUSIGN" property="obusign" />
+        <result column="TERMINALTRANSNO" property="terminaltransno" />
+        <result column="OBUID" property="obuid" />
+        <result column="CARDID" property="cardid" />
+        <result column="TAC" property="tac" />
+        <result column="TRANSFEE" property="transfee" />
+        <result column="ETCCARDTYPE" property="etccardtype" />
+        <result column="TRANSTYPE" property="transtype" />
+        <result column="EXWEIGHT" property="exweight" />
+        <result column="EXAXLECOUNT" property="exaxlecount" />
+        <result column="PASSSPEED" property="passspeed" />
+        <result column="ELECTRICALPERCENTAGE" property="electricalpercentage" />
+        <result column="SIGNSTATUS" property="signstatus" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="SPECIALTYPE" property="specialtype" />
+        <result column="SPECIALSTATUS" property="specialstatus" />
+        <result column="PROSPECIALSTATUS" property="prospecialstatus" />
+        <result column="VEHICLESIGNID" property="vehiclesignid" />
+        <result column="PASSID" property="passid" />
+        <result column="TERMINALNO" property="terminalno" />
+        <result column="VEHCOUNT" property="vehcount" />
+        <result column="ISTEST" property="istest" />
+        <result column="VEHICLESIGN" property="vehiclesign" />
+        <result column="SPARE1" property="spare1" />
+        <result column="SPARE2" property="spare2" />
+        <result column="SPARE3" property="spare3" />
+        <result column="SPARE4" property="spare4" />
+        <result column="SPARE5" property="spare5" />
+        <result column="SPARE6" property="spare6" />
+        <result column="MEDIATYPE" property="mediatype" />
+        <result column="OBUSN" property="obusn" />
+        <result column="TRANSPAYTYPE" property="transpaytype" />
+        <result column="FEE" property="fee" />
+        <result column="SHORTFEE" property="shortfee" />
+        <result column="FEERATE" property="feerate" />
+        <result column="ACTUALFEECLASS" property="actualfeeclass" />
+        <result column="TOTALAMOUNT" property="totalamount" />
+        <result column="OBUTOTALCOUNT" property="obutotalcount" />
+        <result column="NOCARDCOUNT" property="nocardcount" />
+        <result column="ETCTOTALAMOUNT" property="etctotalamount" />
+        <result column="PROVFEE" property="provfee" />
+        <result column="PROVTRANSCOUNT" property="provtranscount" />
+        <result column="PROVINCECOUNT" property="provincecount" />
+        <result column="FEEBOARDPLAY" property="feeboardplay" />
+        <result column="PAYFEE" property="payfee" />
+        <result column="DISCOUNTFEE" property="discountfee" />
+        <result column="FEEMILEAGE" property="feemileage" />
+        <result column="SPCRATEVERSION" property="spcrateversion" />
+        <result column="SPLITPROVINCE" property="splitprovince" />
+        <result column="SHORTFEEMILEAGE" property="shortfeemileage" />
+        <result column="MEDIANO" property="mediano" />
+        <result column="PREBALANCE" property="prebalance" />
+        <result column="POSTBALANCE" property="postbalance" />
+        <result column="EXITFEETYPE" property="exitfeetype" />
+        <result column="OBUTOTALAMOUNT" property="obutotalamount" />
+        <result column="OBUTOTALDISCOUNTAMOUNT" property="obutotaldiscountamount" />
+        <result column="IDENTIFICATION" property="identification" />
+        <result column="TOTALCOUNT" property="totalcount" />
+        <result column="APPVER" property="appver" />
+        <result column="PROVINCEDISCOUNTFEE" property="provincediscountfee" />
+        <result column="ORIGINFEE" property="originfee" />
+        <result column="OBUPROVINCEFEE" property="obuprovincefee" />
+        <result column="DISCOUNTTYPE" property="discounttype" />
+        <result column="CARDTOTALAMOUNT" property="cardtotalamount" />
+        <result column="ISOPENSTATION" property="isopenstation" />
+        <result column="CARDBOXNO" property="cardboxno" />
+        <result column="CARDTRUNKNO" property="cardtrunkno" />
+        <result column="ROADSPECIALTYPE" property="roadspecialtype" />
+        <result column="APPOINTID" property="appointid" />
+        <result column="APOINTDATATYPE" property="apointdatatype" />
+        <result column="APPOINTVEHICLEIDENTIFYTYPE" property="appointvehicleidentifytype" />
+        <result column="APPOINTDISCOUNT" property="appointdiscount" />
+        <result column="APPOINTDISCOUNTTYPE" property="appointdiscounttype" />
+        <result column="PVEHTYPE" property="pvehtype" />
+        <result column="PVEHCLASS" property="pvehclass" />
+        <result column="HGLISTID" property="hglistid" />
+        <result column="HGINSERTTIME" property="hginserttime" />
+        <result column="HGSENDFLAGPROV" property="hgsendflagprov" />
+        <result column="HGSENDERRMSGPROV" property="hgsenderrmsgprov" />
+        <result column="HGSENDTIMEPROV" property="hgsendtimeprov" />
+        <result column="HGSENDTIMESPROV" property="hgsendtimesprov" />
+        <result column="HGSENDFLAGCENTER" property="hgsendflagcenter" />
+        <result column="HGSENDERRMSGCENTER" property="hgsenderrmsgcenter" />
+        <result column="HGSENDTIMECENTER" property="hgsendtimecenter" />
+        <result column="HGSENDTIMESCENTER" property="hgsendtimescenter" />
+        <result column="HGSENDFLAGMAIN" property="hgsendflagmain" />
+        <result column="HGSENDERRMSGMAIN" property="hgsenderrmsgmain" />
+        <result column="HGSENDTIMEMAIN" property="hgsendtimemain" />
+        <result column="HGSENDTIMESMAIN" property="hgsendtimesmain" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MSGID, ID, ENNETROADID, ENSECTIONID, ENROADNO, ENSTATIONID, ENSTATIONNO, ENTOLLSTATIONNAME, ENTOLLLANEID, ENTOLLLANENO, ENTOLLLANEHEX, ENTOLLLANETYPE, ENOPERATORID, ENOPERATORNAME, ENTIME, ENSHIFTID, ENVEHICLEID, ENVEHICLECLASS, ENVEHICLETYPE, ENWEIGHT, ENAXLECOUNT, EXNETROADID, EXSECTIONID, EXROADNO, EXSTATIONID, EXSTATIONNO, EXTOLLSTATIONNAME, EXTOLLLANEID, EXTOLLLANENO, EXTOLLLANEHEX, EXTOLLLANETYPE, LOADGANTRYID, EXTIME, EXOPERATORID, EXOPERATORNAME, EXOPCARDNO, EXOPCARDID, SQUADDATE, EXSHIFTID, NATURALDATE, SQUADNO, SQUADON, EXVEHICLEID, EXIDENTIFYVEHICLEID, EXVEHICLECLASS, EXVEHICLETYPE, OBUSIGN, TERMINALTRANSNO, OBUID, CARDID, TAC, TRANSFEE, ETCCARDTYPE, TRANSTYPE, EXWEIGHT, EXAXLECOUNT, PASSSPEED, ELECTRICALPERCENTAGE, SIGNSTATUS, DESCRIPTION, SPECIALTYPE, SPECIALSTATUS, PROSPECIALSTATUS, VEHICLESIGNID, PASSID, TERMINALNO, VEHCOUNT, ISTEST, VEHICLESIGN, SPARE1, SPARE2, SPARE3, SPARE4, SPARE5, SPARE6, MEDIATYPE, OBUSN, TRANSPAYTYPE, FEE, SHORTFEE, FEERATE, ACTUALFEECLASS, TOTALAMOUNT, OBUTOTALCOUNT, NOCARDCOUNT, ETCTOTALAMOUNT, PROVFEE, PROVTRANSCOUNT, PROVINCECOUNT, FEEBOARDPLAY, PAYFEE, DISCOUNTFEE, FEEMILEAGE, SPCRATEVERSION, SPLITPROVINCE, SHORTFEEMILEAGE, MEDIANO, PREBALANCE, POSTBALANCE, EXITFEETYPE, OBUTOTALAMOUNT, OBUTOTALDISCOUNTAMOUNT, IDENTIFICATION, TOTALCOUNT, APPVER, PROVINCEDISCOUNTFEE, ORIGINFEE, OBUPROVINCEFEE, DISCOUNTTYPE, CARDTOTALAMOUNT, ISOPENSTATION, CARDBOXNO, CARDTRUNKNO, ROADSPECIALTYPE, APPOINTID, APOINTDATATYPE, APPOINTVEHICLEIDENTIFYTYPE, APPOINTDISCOUNT, APPOINTDISCOUNTTYPE, PVEHTYPE, PVEHCLASS, HGLISTID, HGINSERTTIME, HGSENDFLAGPROV, HGSENDERRMSGPROV, HGSENDTIMEPROV, HGSENDTIMESPROV, HGSENDFLAGCENTER, HGSENDERRMSGCENTER, HGSENDTIMECENTER, HGSENDTIMESCENTER, HGSENDFLAGMAIN, HGSENDERRMSGMAIN, HGSENDTIMEMAIN, HGSENDTIMESMAIN
+    </sql>
+
+</mapper>
