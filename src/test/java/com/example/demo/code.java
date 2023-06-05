@@ -55,11 +55,11 @@ public class code {
                 // JDBC 驱动
                 .setDriverName("oracle.jdbc.OracleDriver")
                 // jdbc:oracle:thin:@ip地址(或者localhost):端口:数据库名
-                .setUrl("jdbc:oracle:thin:@172.24.116.232:1521:helowin")
+                .setUrl("jdbc:oracle:thin:@172.14.106.232:1521:helowin")
                 // oracle 账号
                 .setUsername("cyz")
                 // oracle 密码
-                .setPassword("caoyizhuo");
+                .setPassword("caoyhuo");
         //3. 策略配置globalConfiguration中
         StrategyConfig stConfig = new StrategyConfig();
         //全局大写命名
